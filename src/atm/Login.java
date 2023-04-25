@@ -96,7 +96,7 @@ public class Login extends JFrame implements ActionListener
 			try
 			{
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/atm","root","Sumit@9623");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/atm","root","**********");
 				Statement st = con.createStatement();
 				String sql = "select * from user_info where user_id = '"+txtuserid.getText()+"' and pin = '"+Integer.parseInt(txtpin.getText())+"'";
 				ResultSet rs= st.executeQuery(sql);
